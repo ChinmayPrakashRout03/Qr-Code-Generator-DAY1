@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>QR Generator</title>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- GitHub Icon (Font Awesome CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="card">
+  <h1>QR Generator</h1>
+  <p class="subtitle">Generate QR codes instantly.</p>
+
+  <label>Link or Text</label>
+  <textarea id="textInput" placeholder="Enter text or URL..."></textarea>
+
+  <div class="qr-box">
+    <canvas id="qrCanvas"></canvas>
+  </div>
+
+  <p id="helperText">Enter text to generate QR</p>
+
+  <button id="downloadBtn" class="btn">Download PNG</button>
+</div>
+
+<!-- Footer with GitHub Icon -->
+<div class="footer">
+  <i class="fab fa-github"></i>
+  <a href="https://github.com/ChinmayPrakashRout03" target="_blank">
+    ChinmayPrakashRout03
+  </a>
+</div>
+
+<!-- QR Library -->
+<script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
